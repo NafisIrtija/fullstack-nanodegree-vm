@@ -1,0 +1,445 @@
+    1  sudo apt update && sudo apt full-upgrade -y
+    2  sudo apt autoremove
+    3  tar xf cmake-3.27.1.tar.gz 
+    4  cd cmake-3.27.1/
+    5  ls
+    6  ./bootstrap 
+    7  sudo apt install build-essentials
+    8  apt cache find build-essentials
+    9  apt  find build-essentials
+   10  apt search  build-essentials
+   11  apt search  build-essential
+   12  sudo apt install  build-essential
+   13  ./bootstrap 
+   14  sudo apt install libssl-dev
+   15  ./bootstrap \
+   16  make
+   17  make install
+   18  sudo make install
+   19  apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+   20  sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+   21  cd Downloads/
+   22  ls
+   23  chmod +x Anaconda3-2023.07-1-Linux-x86_64.sh 
+   24  ./Anaconda3-2023.07-1-Linux-x86_64.sh 
+   25  conda config --set auto_activate_base false
+   26  conda config --set auto_activate_base False
+   27  jupyter notebook
+   28  conda deactivare
+   29  conda deactivate
+   30  ls
+   31  mkdir Codes
+   32  cd Codes/
+   33  mkdir Python
+   34  cd Python/`
+   35  cd Python/
+   36  conda activare
+   37  conda activate
+   38  jupyter notebook
+   39  cd 
+   40  cd Downloads/
+   41  ls *deb
+   42  chmod +x zoom_amd64.deb 
+   43  ./zoom_amd64.deb 
+   44  ls -l /dev/video0
+   45  lsusb
+   46  python
+   47  conda activate
+   48  python
+   49  jupyter notebook
+   50  ls
+   51  cd Codes/Python/
+   52  ls
+   53  jupyter notebooks
+   54  jupyter notebook
+   55  sudo snap install vlc
+   56  mpicc
+   57  cd Downloads/
+   58  tar xf openmpi-4.1.5.tar.gz 
+   59  cd openmpi-4.1.5/
+   60  /configure --prefix=/usr/local
+   61  ./configure --prefix=/usr/local
+   62  make -j4 all
+   63  sudo make install
+   64  echo $PATH | grep /usr/local/
+   65  vim ~/.bashrc 
+   66  source ~/.bashrc
+   67  which mpiccc
+   68  which mpicc
+   69  conda activate
+   70  conda install -c conda-forge mpi4py openmpi
+   71  conda update --all
+   72  conda install -c conda-forge mpi4py openmpi
+   73  conda install -c conda-forge mpi4py
+   74  python --version
+   75  conda create -n mpienv python=3.11.4 -y
+   76  conda activate mpienv
+   77  conda deactivate
+   78  which mpicc
+   79  conda activate mpienv
+   80  env MPICC=/usr/local/bin/mpicc pip install mpi4py
+   81  cd Codes/
+   82  ls
+   83  mkdir MPI
+   84  cd MPI/
+   85  mkdir Project1
+   86  cd Project1/
+   87  vim main.c
+   88  mpicc main.c 
+   89  vim main.c
+   90  mpicc main.c 
+   91  vim main.c
+   92  mpicc main.c 
+   93  ls
+   94  mpirun -n2 a.out 
+   95  mpirun -np 2 a.out 
+   96  which mpicc
+   97  env MPICC=/usr/local/bin/mpicc python -m pip install mpi4py
+   98  env MPICC=/usr/local/bin/mpicc python -m pip install --no-cache-dir mpi4py
+   99  ls
+  100  env MPICC=/usr/local/bin/mpicc python -m pip install --no-cache-dir mpi4py
+  101  python -m pip cache remove mpi4py
+  102  env MPICC=/usr/local/bin/mpicc python -m pip3 install --no-cache-dir mpi4py
+  103  env MPICC=/usr/local/bin/mpicc python3 -m pip install --no-cache-dir mpi4py
+  104  which python
+  105  which pip
+  106  conda deactivate
+  107  conda env list
+  108  conda remove -n mpienv --all
+  109  conda activare
+  110  conda activate
+  111  conda create -n mpienv python=3.9 
+  112  conda activate mpienv
+  113  env MPICC=$(which mpicc) python -m pip install --no-cache-dir mpi4py
+  114  whereis libdl.so.2
+  115  conda deactivate
+  116  conda remove -n mpienv --all
+  117  conda create -n mpienv python=3.11
+  118  pushd /home/nafis/anaconda3/envs/mpienv/compiler_compat/
+  119  ls
+  120  rm -f ld
+  121  ln -s /usr/bin/ld ld
+  122  conda activate mpienv
+  123  env MPICC=$(which mpicc) python -m pip install --no-cache-dir mpi4py
+  124  ls
+  125  rm -f ld
+  126  ln -s ../bin/x86_64-conda-linux-gnu-ld ld
+  127  ls
+  128  mpiexec -n 5 python -m mpi4py.bench helloworld
+  129  mpiexec -n 2 python -m mpi4py.bench helloworld
+  130  mpiexec -n 5 python -m mpi4py.bench helloworld --oversubscribe
+  131  mpiexec -n 5 --oversubscribe python -m mpi4py.bench helloworld
+  132  conda activare
+  133  conda activate
+  134  cd Codes/Python/
+  135  ls
+  136  jupyter notebook
+  137  cd ../../Downloads/
+  138  tar xzf pycharm-*.tar.gz
+  139  cd pycharm-community-2023.2/bin/
+  140  sh pycharm.sh 
+  141  conda activate
+  142  cd Codes/
+  143  ls
+  144  cd Python/
+  145  ls
+  146  jupyter notebook
+  147  conda create -n api python=3.11
+  148  conda activate api
+  149  pip install fastapi
+  150  pip install "uvicorn[standard]"
+  151  pip install ;ydantic
+  152  pip installp;ydantic
+  153  pip install pydantic
+  154  jupyter notebook
+  155  conda update --all
+  156  jupyter notebook
+  157  conda install jupyter-core
+  158  conda install jupyter
+  159  jupyter notebook
+  160  vim Untitled1.py 
+  161  ls
+  162  mkdir apiProject
+  163  cd apiProject/
+  164  mv ../Untitled1.py .
+  165  ls
+  166  mv Untitled1.py main.py
+  167  ls
+  168  ls
+  169  mv ~/Downloads/Untitled1.py .
+  170  ls
+  171  uvicorn Untitled1:app --reload
+  172  conda activate
+  173  conda activate api
+  174  ls
+  175  uvicorn Untitled1:app --reload
+  176  cd apiProject/
+  177  uvicorn Untitled1:app --reload
+  178  uvicorn main:app --reload
+  179  curl 127.0.0.1:8000 -X POST
+  180  sudo apt  install curl
+  181  curl 127.0.0.1:8000 -X POST
+  182  curl -X 'POST'   'http://localhost:8000/add_person'   -H 'accept: application/json'   -H 'Content-Type: application/json'   -d '{
+  183    "name": "Famosa",
+  184    "age": 22,
+  185    "gender": "F"
+  186  }'
+  187  curl -X 'POST'   'http://localhost:8000/add_person'   -H 'accept: application/json'   -H 'Content-Type: application/json'   -d '{
+  188    "name": "Famosa",
+  189    "age": 22,
+  190    "gender": "F"
+  191  curl -X 'POST' 'http://localhost:8000/add_person' -H 'Content-Type: application/json' -d '{
+  192  >   "name": "Famosa",
+  193  >   "age": 22,
+  194  >   "gender": "F"
+  195  > }'
+  196  curl -X 'POST' 'htt -H 'accept: application/json'p://localhost:8000/add_person' -H 'Content-Type: application/json' -d '{
+  197  >   "name": "Famosa",
+  198  >   "age": 22,
+  199  >   "gender": "F"
+  200  > }'
+  201  curl -X 'POST' 'htt -H 'accept: application/json'p://localhost:8000/add_person' -H 'Content-Type: application/json' -d '{
+  202  >   "name": "Famosa",
+  203  >   "age": 22,
+  204  >   "gender": "F"
+  205  > }'
+  206  curl -X 'POST' 'http://localhost:8000/add_person' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{
+  207  "name": "Famosa",
+  208  "age": 22,
+  209  "gender": "F"
+  210  }'
+  211  cd Codes/Python/
+  212  ls
+  213  cd apiProject/
+  214  conda activate api
+  215  history
+  216  uvicorn main:app --reload
+  217  sudo apt update
+  218  sudo apt full-upgrade -y
+  219  cd Codes/Python/apiProject/
+  220  conda activate api
+  221  uvicorn main:app --reload
+  222  curl -X 'GET'   'http://127.0.0.1:8000/person/9'   -H 'accept: application/json'
+  223  curl -X 'POST'   'http://127.0.0.1:8000/add_person'   -H 'accept: application/json'   -H 'Content-Type: application/json'   -d '{
+  224    "name": "Geralt",
+  225    "age": 0,
+  226    "gender": "H"
+  227  curl -X 'POST'   'http://127.0.0.1:8000/add_person'   -H 'accept: application/json'   -H 'Content-Type: application/json'   -d '{
+  228    "name": "Geralt",
+  229    "age": 0,
+  230    "gender": "H"
+  231  wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+  232  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+  233  sudo apt update && sudo apt install vagrant
+  234  cd Codes/Python/apiProject/
+  235  conda activate api
+  236  uvicorn main:app --reload
+  237  conda deactivate
+  238  vagrant --version
+  239  git clone sudo apt update && sudo apt install vagrant
+  240  sudo apt install git
+  241  add-apt-repository ppa:git-core/ppa
+  242  sudo add-apt-repository ppa:git-core/ppa
+  243  sudo apt update && sudo apt full-upgrade -y
+  244  An OpenSSL vulnerability has recently been fixed with USN-6188-1 & 6119-1:
+  245  # CVE-2023-2650: possible DoS translating ASN.1 object identifiers.
+  246  git clone git@github.com:NafisIrtija/fullstack-nanodegree-vm.git
+  247  git config --global user.name "Nafis Irtija"
+  248  git config --global user.email irtija_nafis@hotmail.com
+  249  git config --global core.editor vim
+  250  ssh-keygen -t ed25519 -C "irtija_nafis@hotmail.com"
+  251  eval "$(ssh-agent -s)"
+  252  ssh-add ~/.ssh/id_ed25519
+  253  cat ~/.ssh/id_ed25519.pub
+  254  git clone git@github.com:NafisIrtija/fullstack-nanodegree-vm.git
+  255  cd fullstack-nanodegree-vm/
+  256  ls
+  257  cd ..
+  258  ls
+  259  rm -rf fullstack-nanodegree-vm
+  260  git clone git@github.com:NafisIrtija/fullstack-nanodegree-vm.git fullstack
+  261  cd fullstack/vagrant/
+  262  vagrant up
+  263  vagrant up --provision
+  264  vagrant ssh
+  265  ls
+  266  cd ..
+  267  ls
+  268  cd ..
+  269  rm -rf fullstack/
+  270  git clone git@github.com:NafisIrtija/fullstack-nanodegree-vm.git fullstack
+  271  cd fullstack/vagrant/
+  272  ls
+  273  vim Vagrantfile 
+  274  vagrant up
+  275  mv ~/Downloads/lotsofmenus.py .
+  276  vagrant box list
+  277  vagrant box remove bento/ubuntu-21.04
+  278  vagrant box remove bento/ubuntu-18.04
+  279  vagrant destroy 2d3e96448c0a4fd2be76b25a4dcfe74a
+  280  vagrant box remove bento/ubuntu-18.04
+  281  vagrant global-status
+  282  cd fullstack/
+  283  ls
+  284  cd vagrant/
+  285  vagrant up
+  286  vagrant reload
+  287  lsof -i :8000
+  288  vagrant reload
+  289  sudo netstat -peanut | grep ":8000 "
+  290  sudo apt install net-tools
+  291  sudo netstat -peanut | grep ":8000 "
+  292  VBoxManage list runningvms
+  293  VBoxManage controlvm d55f67cf-062b-40c8-a998-3a8ca91e6666 poweroff
+  294  vagrant up
+  295  vagrant box list
+  296  vagrant halt bento/ubuntu-18.04
+  297  vagrant global-status --prune
+  298  vagrant halt e7f717a
+  299  vagrant destroy e7f717a
+  300  vim Vagrantfile 
+  301  vagrant up
+  302  vim Vagrantfile 
+  303  vagrant ssh
+  304  cd fullstack/
+  305  cd vagrant/
+  306  ls
+  307  vagrant up
+  308  gavrant ssh
+  309  vagrant ssh
+  310  vim webserver.py 
+  311  cd ..
+  312  ls
+  313  git status
+  314  git add .
+  315  git commit -m "Modified to work with python 3, adds upto GET and POST"
+  316  git push origin master
+  317  cd vagrant/
+  318  ls
+  319  mv webserver.py restaurant/
+  320  ls
+  321  cd restaurant/
+  322  ls
+  323  cd ..
+  324  cp -rp restaurant restaurant_2
+  325  cd restaurant_2/
+  326  ls
+  327  rm *.db
+  328  ls
+  329  python3 database_setup.py 
+  330  vim webserver.py 
+  331  vim database_insert.py 
+  332  ls
+  333  vim restaurantserver.py 
+  334  vim webserver.py 
+  335  ls
+  336  vim database_insert.py 
+  337  cd fullstack/vagrant/
+  338  vagrant up
+  339  vagrant ssh
+  340  cd restaurant
+  341  ls
+  342  cd ../restaurant2
+  343  cd ../restaurant_2/
+  344  ls
+  345  vim restaurantserver.py 
+  346  ls
+  347  rm restaurantserver.py 
+  348  vim restaurantserver.py 
+  349  cd
+  350  ls
+  351  ls -ltra
+  352  mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
+  353  touch ~/.vimrc
+  354  vim ~/.vimrc 
+  355  cd Codes/Python/
+  356  ls
+  357  cd apiProject/
+  358  ls
+  359  vim main.py 
+  360  cd
+  361  vim .vimrc 
+  362  rm .vimrc 
+  363  mkdir flask_proj
+  364  cd flask_proj/
+  365  ls
+  366  cd ..
+  367  ls
+  368  cd flask_proj/
+  369  cp ../restaurant/database_setup.py .
+  370  ls
+  371  pycharm
+  372  vim main.py
+  373  vim main.py\
+  374  vim database_setup.py
+  375  vim main.py 
+  376  vim database_setup.py 
+  377  ls
+  378  mkdir templates
+  379  cd templates/
+  380  vim menu.html
+  381  cp menu.html new_menu.html
+  382  vim new_menu.html 
+  383  vim menu.html 
+  384  cp new_menu.html edit_menu.html
+  385  vim edit_menu.html 
+  386  vim menu.html 
+  387  vim delete_menu.html
+  388  vim new_menu.html 
+  389  vim menu.html 
+  390  cd ..
+  391  mkdir static
+  392  cd static/
+  393  vim styles.css
+  394  cd ../templates/
+  395  vim menu.html 
+  396  vim edit_menu.html 
+  397  cd fullstack/vagrant/
+  398  vagrant up
+  399  vagrant ssh
+  400  cd fullstack/vagrant/
+  401  cd flask_proj/
+  402  cd ..
+  403  vagrant up
+  404  vagrant ssh
+  405  sudo apt install pinta
+  406  ls
+  407  cd ../../Codes/
+  408  cd html/
+  409  vim index.html
+  410  vim main.js
+  411  cd fullstack/vagrant/
+  412  vagrant up
+  413  vagrant ssh
+  414  cd ..
+  415  ls
+  416  cat index.html 
+  417  open index.html 
+  418  firefox index.html 
+  419  vim js/main.js
+  420  vim css/styles.css
+  421  vim js/main.js
+  422  code js/main.js 
+  423  sudo apt update
+  424  sudo apt install ffmpeg
+  425  cd fullstack/vagrant/
+  426  vagrant up
+  427  vagrant ssh
+  428  cd FinalProject/
+  429  code .
+  430  curl http://localhost:5000/restaurant/1/JSON/
+  431  cd fullstack/vagrant/
+  432  vagrant up
+  433  vagrant provision
+  434  vim vagrant file
+  435  code Vagrantfile 
+  436  VBoxManage list
+  437  VBoxManage list vns
+  438  VBoxManage list vms
+  439  VBoxManage controlvm d55f67cf-062b-40c8-a998-3a8ca91e6666 poweroff
+  440  VBoxManage controlvm 11ce5b49-7bd6-4c9f-89fb-b8d2ac76588c poweroff
+  441  vagrant box list
+  442  vagrant box remove bento/ubuntu-18.04
+  443  vagrant destroy 1032c11036274c579832b067fc19b89d
+  444  vagrant box remove bento/ubuntu-18.04
+  445  history > commands.txt
